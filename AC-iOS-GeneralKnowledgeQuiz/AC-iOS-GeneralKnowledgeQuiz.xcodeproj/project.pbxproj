@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81CF14CE1FB4F205004A9A7A /* DetailedQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF14CD1FB4F205004A9A7A /* DetailedQuestionViewController.swift */; };
 		DE13628C1FB2488400D54C7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE13628B1FB2488400D54C7B /* AppDelegate.swift */; };
 		DE13628E1FB2488400D54C7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE13628D1FB2488400D54C7B /* ViewController.swift */; };
 		DE1362911FB2488400D54C7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE13628F1FB2488400D54C7B /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		81CF14CD1FB4F205004A9A7A /* DetailedQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedQuestionViewController.swift; sourceTree = "<group>"; };
 		DE1362881FB2488400D54C7B /* AC-iOS-GeneralKnowledgeQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AC-iOS-GeneralKnowledgeQuiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE13628B1FB2488400D54C7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE13628D1FB2488400D54C7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				DE13628B1FB2488400D54C7B /* AppDelegate.swift */,
 				DE13628D1FB2488400D54C7B /* ViewController.swift */,
 				DE13628F1FB2488400D54C7B /* Main.storyboard */,
+				81CF14CD1FB4F205004A9A7A /* DetailedQuestionViewController.swift */,
 				DE1362921FB2488400D54C7B /* Assets.xcassets */,
 				DE1362941FB2488400D54C7B /* LaunchScreen.storyboard */,
 				DE1362971FB2488400D54C7B /* Info.plist */,
@@ -141,6 +144,7 @@
 			files = (
 				DE13629E1FB24A5000D54C7B /* Question.swift in Sources */,
 				DE13628E1FB2488400D54C7B /* ViewController.swift in Sources */,
+				81CF14CE1FB4F205004A9A7A /* DetailedQuestionViewController.swift in Sources */,
 				DE13628C1FB2488400D54C7B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
