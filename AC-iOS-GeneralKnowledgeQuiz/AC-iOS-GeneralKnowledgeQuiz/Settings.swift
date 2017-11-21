@@ -11,7 +11,7 @@ import Foundation
 
 struct Settings {
     static var difficulty: [String] = ["All", "Easy", "Medium", "Hard"]
-    static var difficultySet: String = "All"
+    static var difficultySet: String = "easy"
     static var category: [String]{
         var ouputCategory = [""]
         for elements in Question.questions{
@@ -22,6 +22,6 @@ struct Settings {
         return ouputCategory
     }
     static var categorySet: String = "Sports"
-    static var type: [String] = ["All", "Boolean", "multiple"]
-    static var typSte: String = "All" 
+    static var type: [String] = ["All", "multiple", "Boolean"]
+    static var typSte: String = "multiple"
 }

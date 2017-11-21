@@ -13,10 +13,29 @@ class SettingsViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
 
     
     @IBAction func DifficultySegmentController(_ sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            Settings.difficultySet = Settings.difficulty[0]
+        case 1:
+            Settings.difficultySet = Settings.difficulty[1]
+        case 2:
+            Settings.difficultySet = Settings.difficulty[2]
+        default:
+            Settings.difficultySet = Settings.difficulty[3]
+        }
     }
     
     
     @IBAction func typeSegmentController(_ sender: UISegmentedControl) {
+
+        switch sender.selectedSegmentIndex {
+        case 0:
+            Settings.typSte = Settings.type[0]
+        case 1:
+            Settings.typSte = Settings.type[1]
+        default:
+            Settings.typSte = Settings.type[2]
+        }
     }
     
 

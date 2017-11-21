@@ -15,7 +15,9 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     var myQuestions = [Question]()
     var myfilteredQuestions: [Question]{
         let filterCatagory = myQuestions.filter{$0.category.lowercased() == Settings.categorySet.lowercased()}
-        return filterCatagory
+        let filteredForDificulty = filterCatagory.filter{$0.difficulty.lowercased() == Settings.difficultySet.lowercased()}
+        let filteredForCategory = filteredForDificulty.filter{$0.type.lowercased() == Settings.typSte.lowercased()}
+        return filteredForCategory
     }
     // Mark - UItableView Methods Required I need the number of rows and how the cell will loook like
     
@@ -44,19 +46,17 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
             destination.question = questionSetup
         }
     }
-    override func viewDidLayoutSubviews() {
+    
+    override func viewWillAppear(_ animated: Bool) {
+        // notice that view will appear is more relevant in this cas as we are changing the contents of the cells 
         self.myTableView.reloadData()
-        print("view did layout subviews", Settings.categorySet)
-    }
-    override func viewWillLayoutSubviews() {
-        self.myTableView.reloadData()
-        print("view will layout subview", Settings.categorySet)
+        print("view will appeared", Settings.difficultySet)
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("view did load")
+        print("view did load", Settings.difficultySet)
         // Do any additional setup after loading the view, typically from a nib.
         self.myQuestions = Question.questions
         self.myTableView.delegate = self

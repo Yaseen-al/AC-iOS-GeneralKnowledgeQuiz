@@ -54,6 +54,7 @@ class DetailedQuestionViewController: UIViewController,UIPickerViewDelegate,UIPi
         self.myPicker.dataSource = self
         if let question = question{
             self.questionLabel.text = question.question
+            
             var mypossibleAnswers:[String]{
                 let random = Int(arc4random_uniform(UInt32((question.incorrectAnswers.count) + 1)))
                 var answers = question.incorrectAnswers
